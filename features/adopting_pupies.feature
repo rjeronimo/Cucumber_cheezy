@@ -32,8 +32,7 @@ Feature: Adopting puppies
     And I select "Check" from the pay with dropdown
     And I click the Place Order button
     Then I should see "Thank you for adopting a puppy!"
-    And I should see "$34.95" as the cart total
-
+   
   Scenario: Validate cart with one puppy
     When I click the View Details button "1"
     And I click the Adopt Me button
