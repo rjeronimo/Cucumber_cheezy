@@ -17,9 +17,7 @@ class ShoopingCartPage
     # cart_line_item(line_item)[1].text
   end
 
-  def cart_total
-    @browser.td(:class => 'total_cell').text
-  end
+ 
 
   def subtotal_for_line_item(line_item)
     table_value(line_item.to_i, SUBTOTAL_COLUMN)
@@ -38,6 +36,9 @@ class ShoopingCartPage
 
 =begin
 
+  def cart_total
+    @browser.td(:class => 'total_cell').text
+  end
 
      #Report has city in first column and population is second
    def population_for(city)
